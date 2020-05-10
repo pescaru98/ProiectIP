@@ -1,0 +1,64 @@
+http://3.16.124.154:8080/wearablehealth
+
+/admins/
+	getAll
+	getOne/{username}
+	delete/{username}
+	insert
+	update
+
+/alerts/
+	getAll
+	getOne/{alert_id}
+	delete/{alert_id}
+	insert
+	update
+	getAllOfPacient/{username} 		
+
+/doctors/
+	getAll
+	getOne/{username}
+	delete/{username}
+	insert
+	update
+	getAllPacientsOf/{username}
+/manualmeasurements/
+	getAll
+	getOne/{manual_measurement_id}
+	delete/{manual_measurement_id}
+	insert
+	update
+	getAllOfPacient/{username}		
+
+/medicaldata/
+	getAll
+	getOne/{medical_data_id}
+	delete/{medical_data_id}
+	insert
+	update
+	getAllOfPacient/{username}			
+
+/pacients/
+	getAll
+	getOne/{username}
+	delete/{username}
+	insert
+	update		
+	getAllDoctorsOf/{username}
+/recommendations/
+	getAll
+	getOne/{recommendation_id}
+	delete/{recommendation_id}
+	insert
+	update
+	getAllOfPacient/{username}			
+
+/sensormeasure/
+	insert
+	getLatestOf/{username}
+	getAllOf/{username}
+/users/
+	getAll
+	getOne/{username}
+	checkCredentials
+	insert
